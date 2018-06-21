@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <import type="android.view.View"/>
+        <variable
+            name="manager" type="android.support.v4.app.FragmentManager"/>
+
+        <variable
+            name="loginhandler"
+            type="com.example.skr.databindingdemo2.Handler.LoginHandler"/>
+        <variable
+            name="handler"
+            type="com.example.skr.databindingdemo2.Activity.TabActivity"/>
+
+    </data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.skr.databindingdemo2.Activity.TabActivity">
+
+    
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@color/colorPrimary"
+        app:tabGravity="fill"
+        app:tabMode="scrollable"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorColor="@color/colorPrimaryDark"
+        ></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></android.support.v4.view.ViewPager>
+    
+</LinearLayout>
+</layout>
