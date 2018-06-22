@@ -24,6 +24,7 @@ import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
+    //declaration
     private Context mContext;
     private User user;
     private UserRecyclerAdapter userRecyclerAdapter;
